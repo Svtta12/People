@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Retrofit</string>
+    <string name="text_gender">Пол:</string>
+    <string name="text_country">Страна:</string>
+    <string name="text_city">Город:</string>
+    <string name="text_phone">Телефон:</string>
+    <string name="text_email">Email:</string>
+</resources>

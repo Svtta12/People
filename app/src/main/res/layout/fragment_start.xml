@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_username"
+        style="@style/Widget.MaterialComponents.TextView.One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Svetlana" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_username" />
+
+    <TextView
+        android:id="@+id/text_first"
+        style="@style/Widget.MaterialComponents.TextView.One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        tools:text="Svetlana" />
+
+    <TextView
+        android:id="@+id/text_last"
+        style="@style/Widget.MaterialComponents.TextView.One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_first"
+        tools:text="Shitikova" />
+
+    <TextView
+        android:id="@+id/text_gender"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_gender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_last" />
+
+    <TextView
+        android:id="@+id/gender"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/text_gender"
+        app:layout_constraintTop_toBottomOf="@id/text_last"
+        tools:text="Male" />
+
+    <TextView
+        android:id="@+id/text_country"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_country"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_gender" />
+
+    <TextView
+        android:id="@+id/country"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/text_country"
+        app:layout_constraintTop_toBottomOf="@id/text_gender"
+        tools:text="Russia" />
+
+    <TextView
+        android:id="@+id/text_city"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_country" />
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/text_city"
+        app:layout_constraintTop_toBottomOf="@id/text_country"
+        tools:text="Novosibirsk" />
+
+    <TextView
+        android:id="@+id/text_phone"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_city" />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        app:layout_constraintStart_toEndOf="@id/text_phone"
+        app:layout_constraintTop_toBottomOf="@id/text_city"
+        tools:text="111111" />
+
+    <TextView
+        android:id="@+id/text_email"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_phone" />
+
+    <TextView
+        android:id="@+id/email"
+        style="@style/Widget.MaterialComponents.TextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        app:layout_constraintStart_toEndOf="@id/text_email"
+        app:layout_constraintTop_toBottomOf="@id/text_phone"
+        tools:text="shitikovasvtta@mail.com" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/ic_repite_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
